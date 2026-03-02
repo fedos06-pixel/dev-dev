@@ -1,0 +1,10 @@
+{
+  "project_name": "MCP Demo",
+  "version": "1.0.0",
+  "description": "Простой проект для тестирования функционала MCP-сервера",
+  "features": [
+    "health_check",
+    "file_reading",
+    "json_rpc"
+  ]
+}
