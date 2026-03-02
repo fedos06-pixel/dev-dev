@@ -7,7 +7,7 @@ from pydantic import BaseModel
 
 app = FastAPI(title="MCP Demo Server")
 
-# Конфигурация
+
 DEMO_DIR = os.path.join(os.path.dirname(__file__), "demo_project")
 
 class JsonRpcRequest(BaseModel):
@@ -39,7 +39,6 @@ async def mcp_endpoint(request: JsonRpcRequest):
             "serverInfo": {"name": "demo-mcp-server", "version": "1.0.0"}
         }
     elif method == "tools/list":
-        # Возвращаем список доступных инструментов
         response_result = {
             "tools": [
                 {
